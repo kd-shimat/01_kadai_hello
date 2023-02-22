@@ -31,7 +31,6 @@ services:
         source: ./
         target: /app
     command: /bin/bash -c "composer update && /bin/bash"
-    tty: true # コンテナを起動し続ける
     stdin_open: true
 volumes:
   db-data:
